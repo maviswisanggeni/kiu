@@ -1,0 +1,148 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 1000;
+    transition: top 0.8s;
+}
+
+header .logo {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header .menu-container {
+    float: right;
+    margin-right: 80px;
+}
+
+header .menu-container .menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+header .menu-container .menu.active .rectangle {
+    opacity: 1;
+}
+
+header .menu-container .menu:hover .rectangle {
+    opacity: 1;
+}
+
+header .menu-container .menu a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Aeonik-Bold";
+}
+
+header .menu-container .menu .rectangle {
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    height: 25%;
+    width: 10px;
+    background-color: #000;
+    opacity: 0;
+}
+
+header .hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 111;
+}
+
+header .close-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 111;
+}
+
+/* header responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header .logo {
+        margin-left: 50px;
+    }
+
+    header .menu-container {
+        margin-right: 50px;
+    }
+
+    header .menu-container .menu {
+        margin-left: 30px;
+    }
+}
+
+/* header responsive phone */
+@media (min-width: 320px) and (max-width: 767px) {
+    header .logo {
+        margin-left: 20px;
+    }
+
+    header .logo img {
+        height: 60px;
+    }
+
+    header .hamburger-menu {
+        display: block;
+        right: 20px;
+    }
+
+    header .close-menu {
+        /* display: block; */
+        right: 20px;
+    }
+
+    header .menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    header .menu-container .menu {
+        display: block;
+        margin-left: 0;
+        padding: 20px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    header .menu-container .menu .rectangle {
+        display: none;
+    }
+
+    header .menu-container .menu a {
+        color: #000;
+        font-size: 26px;
+    }
+}

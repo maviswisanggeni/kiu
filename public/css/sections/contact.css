@@ -1,0 +1,222 @@
+.contact {
+    padding: 100px 80px;
+}
+
+.contact .title {
+    margin-bottom: 100px;
+    font-family: "Aeonik-Bold";
+    color: var(--black-color);
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.contact .contact-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact .contact-form form {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contact .contact-form form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form form .form-group label {
+    font-family: "Aeonik-Bold";
+    color: var(--black-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.contact .contact-form form .form-group input {
+    width: 450px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+.contact .contact-form form .form-group input#name {
+    margin-bottom: 50px;
+}
+
+.contact .contact-form form .form-group textarea {
+    width: 450px;
+    height: 60px;
+    padding: 20px;
+}
+
+.contact .contact-form form .form-group input, textarea {
+    padding: 0 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.contact .contact-form form .form-group input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid var(--blue-color);
+}
+
+.contact .contact-form form .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact .contact-form form button {
+    float: right;
+    font-family: 'Aeonik-Bold';
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    background: var(--blue-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact .contact-form form button:hover {
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+.contact .contact-form .alert {
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+    padding: 15px;
+    border: 1px solid var(--blue-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    margin-bottom: 20px;
+}
+
+.contact .contact-form .alert-success {
+    border-color: var(--blue-color);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+/* Tambahkan animasi fade in dan out */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Terapkan animasi pada alert-success */
+.contact .contact-form .alert-success {
+    animation: fadeInOut 5s ease-in-out;
+}
+
+/* contact section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        padding: 70px 50px;
+    }
+
+    .contact .title {
+        margin-bottom: 50px;
+        font-size: 60px;
+    }
+
+    .contact .contact-form {
+        justify-content: center;
+    }
+
+    .contact .contact-form form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact .contact-form form .form-group {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .contact .contact-form form .form-group input {
+        width: 95%;
+        margin-right: 0;
+    }
+
+    .contact .contact-form form .form-group input#name {
+        margin-bottom: 0;
+    }
+
+    .contact .contact-form form .form-group textarea {
+        width: 95%;
+    }
+
+    .contact .contact-form .alert {
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+/* contact section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .contact .title {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .contact .contact-form {
+        justify-content: center;
+    }
+
+    .contact .contact-form form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact .contact-form form .form-group {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact .contact-form form .form-group input {
+        width: 85%;
+        margin-right: 0;
+    }
+
+    .contact .contact-form form .form-group input#name {
+        margin-bottom: 0;
+    }
+
+    .contact .contact-form form .form-group textarea {
+        width: 85%;
+    }
+
+    .contact .contact-form .alert {
+        bottom: 50px;
+        right: 50px;
+    }
+}

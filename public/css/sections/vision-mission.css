@@ -1,0 +1,122 @@
+.vision-mission {
+    padding: 125px 80px;
+    margin: 100px 0;
+    background: var(--black-color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    z-index: -2;
+}
+
+.vision-mission .title {
+    font-family: "Aeonik-Bold";
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.vision-mission .line {
+    width: 1px;
+    height: 200px;
+    background-color: var(--white-color);
+}
+
+.vision-mission p {
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.vision-mission .vision,
+.vision-mission .mission {
+    max-width: 540px;
+}
+
+/* visi misi section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .vision-mission {
+        position: relative;
+        padding: 80px 50px;
+        margin-top: 70px;
+    }
+
+    .vision-mission .title {
+        width: fit-content;
+        font-size: 60px;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .vision-mission .title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: var(--blue-color);
+        z-index: -1;
+    }
+
+    .vision-mission .line {
+        display: none;
+    }
+
+    .vision-mission p {
+        font-size: 18px;
+    }
+
+    .vision-mission .vision,
+    .vision-mission .mission {
+        max-width: 45%;
+    }
+}
+
+/* visi misi section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .vision-mission {
+        flex-direction: column;
+        position: relative;
+        padding: 100px 20px;
+        margin-top: 70px;
+    }
+
+    .vision-mission .vision {
+        margin-bottom: 70px;
+    }
+
+    .vision-mission .title {
+        width: fit-content;
+        font-size: 40px;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .vision-mission .title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: var(--blue-color);
+        z-index: -1;
+    }
+
+    .vision-mission .line {
+        display: none;
+    }
+
+    .vision-mission p {
+        font-size: 18px;
+    }
+
+    .vision-mission .vision,
+    .vision-mission .mission {
+        max-width: 100%;
+    }
+}

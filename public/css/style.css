@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url('../fonts/AeonikTRIAL-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-RegularItalic';
+    src: url('../fonts/AeonikTRIAL-RegularItalic.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-Bold';
+    src: url('../fonts/AeonikTRIAL-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-BoldItalic';
+    src: url('../fonts/AeonikTRIAL-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-Light';
+    src: url('../fonts/AeonikTRIAL-Light.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik-LightItalic';
+    src: url('../fonts/AeonikTRIAL-LightItalic.otf');
+}
+
+body {
+    font-family: 'Aeonik-Regular', 'Aeonik-RegularItalic', 'Aeonik-Bold', 'Aeonik-BoldItalic', 'Aeonik-Light',
+        'Aeonik-LightItalic', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --black-color-bg: #1A1A1A;
+    --yellow-color: #FFF55F;
+    --blue-color: #000AFF;
+}
+
+.white-space {
+    width: 100%;
+    padding-top: 100px;
+}

@@ -1,0 +1,120 @@
+.hero {
+    margin-top: 100px;
+    height: fit-content;
+    padding: 70px 80px;
+}
+
+.hero .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.hero .top .content {
+    padding-left: 50px;
+    width: 400px;
+}
+
+.hero .top .content p {
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.hero .bottom {
+    float: right;
+    margin-bottom: 70px;
+}
+
+.hero .bottom .content-mobile {
+    display: none;
+}
+
+.hero .bottom .content-mobile p {
+    font-size: 16px;
+    color: var(--black-color);
+    margin-top: 30px;
+}
+
+.hero .thumbnail {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.hero .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero h1 {
+    font-family: "Aeonik-Bold";
+    font-size: 100px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+/* hero section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        padding: 70px 50px;
+    }
+
+    .hero .top {
+        margin-bottom: 0;
+    }
+
+    .hero .bottom {
+        float: left;
+    }
+
+    .hero .top .content {
+        display: none;
+    }
+
+    .hero .bottom .content-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+        margin-bottom: 10px;
+    }
+}
+
+/* hero section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        margin-top: 70px;
+        padding: 50px 20px;
+    }
+
+    .hero .top {
+        margin-bottom: 0;
+    }
+
+    .hero .top .content {
+        display: none;
+    }
+
+    .hero .bottom {
+        margin-bottom: 40px;
+        float: left;
+    }
+
+    .hero .bottom .content-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+}

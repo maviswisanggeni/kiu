@@ -1,0 +1,170 @@
+.teams {
+    margin-bottom: 100px;
+}
+
+.teams .title {
+    font-family: "Aeonik-Bold";
+    font-size: 80px;
+    color: var(--black-color);
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+.teams .team {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 100px;
+    background: var(--white-color);
+}
+
+.teams .team h1 {
+    font-family: "Aeonik-Bold";
+    min-width: 30%;
+    font-size: 20px;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+.teams .team .position {
+    display: flex;
+}
+
+.teams .team .position p {
+    font-family: "Aeonik-Regular";
+    font-size: 20px;
+    color: var(--black-color);
+    margin: 0 100px;
+    text-transform: capitalize;
+}
+
+.teams .team .profile {
+    display: none;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    left: 30%;
+}
+
+.teams .team .position a {
+    font-family: "Aeonik-Regular";
+    font-size: 20px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.teams .team:hover .profile {
+    display: block;
+    z-index: 9999;
+}
+
+.teams .team:hover {
+    background: var(--yellow-color);
+}
+
+/* team section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .teams .title {
+        font-size: 60px;
+        padding: 0 50px;
+    }
+
+    .teams .team {
+        padding: 0 50px;
+    }
+
+    .teams .team h1 {
+        font-size: 18px;
+    }
+
+    .teams .team .position {
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+    }
+
+    .teams .team .position p {
+        font-size: 18px;
+        margin: 0 50px;
+    }
+
+    .teams .team .profile {
+        display: block;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        left: 0;
+    }
+
+    .teams .team .position a {
+        font-size: 18px;
+    }
+}
+
+/* team section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .teams {
+        margin-bottom: 70px;
+    }
+
+    .teams .title {
+        font-size: 40px;
+        padding: 0 20px;
+        margin-bottom: 70px;
+    }
+
+    .teams .team {
+        flex-direction: column;
+        padding: 0 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: fit-content;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .teams .team h1 {
+        padding: 20px 0;
+        font-size: 24px;
+    }
+
+    .teams .team .position {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .teams .team .position p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .teams .team .profile {
+        display: block;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+        left: 0;
+    }
+
+    .teams .team .position a {
+        font-size: 18px;
+    }
+
+    .teams .team h1 {
+        width: 100%;
+    }
+
+    .teams .team:hover {
+        background: var(--white-color);
+    }
+}

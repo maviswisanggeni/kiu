@@ -1,0 +1,132 @@
+.history {
+    padding: 30px 80px;
+}
+
+.history .title {
+    font-family: "Aeonik-Bold";
+    font-size: 80px;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+.history .history-list {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.history .history-list .history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+
+.history .history-list .history-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.history .history-list .history-item:nth-child(odd) .content {
+    flex-direction: row;
+}
+
+.history .history-list .history-item div {
+    max-width: 540px;
+}
+
+.history .history-list .history-item h1 {
+    font-family: "Aeonik-Bold";
+    font-size: 36px;
+    color: var(--black-color);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.history .history-list .history-item p {
+    font-size: 20px;
+}
+
+.history .history-list .history-item img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1000px;
+    overflow: hidden;
+}
+
+/* history section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .history {
+        padding: 30px 50px;
+    }
+
+    .history .title {
+        font-size: 75px;
+    }
+
+    .history .history-list .history-item div {
+        min-width: 50%;
+    }
+
+    .history .history-list .history-item:nth-child(even) div {
+        margin-left: 50px;
+    }
+
+    .history .history-list .history-item:nth-child(odd) div {
+        margin-right: 50px;
+    }
+
+    .history .history-list .history-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}
+
+/* history section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .history {
+        padding: 30px 20px;
+    }
+
+    .history .title {
+        font-size: 50px;
+    }
+
+    .history .history-list {
+        margin-top: 50px;
+    }
+
+    .history .history-list .history-item {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .history .history-list .history-item div {
+        max-width: 100%;
+    }
+
+    .history .history-list .history-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .history .history-list .history-item:nth-child(odd) .content {
+        flex-direction: column;
+    }
+
+    .history .history-list .history-item h1 {
+        font-size: 35px;
+    }
+
+    .history .history-list .history-item p {
+        margin-bottom: 30px;
+    }
+
+    .history .history-list .history-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+}

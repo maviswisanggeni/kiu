@@ -1,0 +1,68 @@
+.departments {
+    height: fit-content;
+    padding: 70px 80px;
+}
+
+.departments .title {
+    width: 100%;
+    font-family: 'Aeonik-Bold';
+    color: var(--black-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.departments .department {
+    padding: 40px 0;
+    border-top: 1px solid var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.departments .department .name {
+    width: 60%;
+    font-family: 'Aeonik-Bold';
+    color: var(--black-color);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.departments .department .description {
+    width: 40%;
+    font-size: 20px;
+}
+
+/* departments section responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .departments {
+        padding: 70px 50px;
+    }
+
+    .departments .department .name {
+        font-size: 40px;
+        width: 50%;
+    }
+}
+
+/* departments section responsive mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+    .departments {
+        padding: 50px 20px;
+    }
+
+    .departments .department {
+        padding: 70px 0;
+        flex-direction: column;
+    }
+
+    .departments .department .name {
+        font-size: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .departments .department .description {
+        width: 100%;
+    }
+}

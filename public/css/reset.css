@@ -1,0 +1,57 @@
+/* reset.css */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd,
+dt {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::selection {
+    background-color: var(--yellow-color);
+}
+
+::-moz-selection {
+    background-color: var(--yellow-color);
+}

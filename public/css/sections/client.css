@@ -1,0 +1,77 @@
+.clients {
+    height: fit-content;
+    background-color: var(--white-color);
+    padding: 30px 80px;
+    overflow: hidden;
+}
+
+.clients .title {
+    width: 100%;
+    font-family: "Aeonik-Bold";
+    color: var(--black-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.clients .client-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.clients .client-gallery .client {
+    flex: 0 0 auto;
+    margin-right: 200px;
+    width: 120px;
+    height: 120px;
+    background: var(--white-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.clients .client-gallery .client img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(100%) contrast(100%);
+    transition: filter 0.5s ease;
+}
+
+.clients .client-gallery .client img:hover {
+    filter: none;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .clients {
+        padding: 30px 50px;
+    }
+
+    .clients .client-gallery {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .clients {
+        padding: 30px 20px;
+    }
+
+    .clients .client-gallery .client {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .clients .client-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-right: 0;
+    }
+}
