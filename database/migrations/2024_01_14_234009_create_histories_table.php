@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\history;
+use App\Models\History;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        history::create([
+        History::create([
             'title' => 'History 1',
             'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
             'image' => 'test.png',

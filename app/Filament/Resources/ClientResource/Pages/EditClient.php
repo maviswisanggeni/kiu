@@ -3,7 +3,7 @@
 namespace App\Filament\Resources\ClientResource\Pages;
 
 use App\Filament\Resources\ClientResource;
-use App\Models\client;
+use App\Models\Client;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Illuminate\Support\Facades\Storage;
@@ -16,7 +16,7 @@ class EditClient extends EditRecord
     {
         return [
             Actions\DeleteAction::make()->after(
-                function(client $record){
+                function(Client $record){
                     if($record->logo){
                         Storage::disk('public')->delete($record->logo);
                     }

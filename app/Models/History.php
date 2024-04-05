@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 
-class work extends Model
+class History extends Model
 {
     use HasFactory;
     protected $fillable = [
         'title',
-        'description',
+        'content',
         'image',
     ];
 

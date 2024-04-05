@@ -1,18 +1,18 @@
 <?php
 
-use App\Models\about;
-use App\Models\client;
-use App\Models\department;
-use App\Models\hero;
-use App\Models\history;
-use App\Models\partner;
-use App\Models\setting;
-use App\Models\team;
+use App\Models\About;
+use App\Models\Client;
+use App\Models\Department;
+use App\Models\Hero;
+use App\Models\History;
+use App\Models\Partner;
+use App\Models\Setting;
+use App\Models\Team;
 use App\Models\VisionMission;
-use App\Models\work;
+use App\Models\Work;
 
 function getSettingsValue($key) {
-    $data = setting::where('key', $key)->first();
+    $data = Setting::where('key', $key)->first();
     if(isset($data->value)){
         return $data->value;
     } else {
@@ -21,12 +21,12 @@ function getSettingsValue($key) {
 }
 
 function getHeroValue($id) {
-    $data = hero::where('id', $id)->first();
+    $data = Hero::where('id', $id)->first();
     return $data;
 }
 
 function getAboutValue($key) {
-    $data = about::where('key', $key)->first();
+    $data = About::where('key', $key)->first();
     if(isset($data->value)){
         return $data->value;
     } else {
@@ -35,27 +35,27 @@ function getAboutValue($key) {
 }
 
 function getWorks() {
-    $data = work::all();
+    $data = Work::all();
     return $data;
 }
 
 function getDepartments() {
-    $data = department::all();
+    $data = Department::all();
     return $data;
 }
 
 function getPartners() {
-    $data = partner::all();
+    $data = Partner::all();
     return $data;
 }
 
 function getClients() {
-    $data = client::all();
+    $data = Client::all();
     return $data;
 }
 
 function getHistory() {
-    $data = history::all();
+    $data = History::all();
     return $data;
 }
 
@@ -69,6 +69,6 @@ function getVisionMission($key) {
 }
 
 function getTeams() {
-    $data = team::all();
+    $data = Team::all();
     return $data;
 }

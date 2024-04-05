@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 
-class hero extends Model
+class Hero extends Model
 {
     use HasFactory;
     protected $fillable = [

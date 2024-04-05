@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\hero;
+use App\Models\Hero;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        hero::create([
+        Hero::create([
             'title_top' => 'Title Top',
             'title_bottom' => 'Title Bottom',
             'thumbnail' => 'Laravel',

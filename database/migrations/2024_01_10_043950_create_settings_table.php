@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Models\setting;
+use App\Models\Setting;
 
 return new class extends Migration
 {
@@ -21,91 +21,91 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        setting::create([
+        Setting::create([
             'key' => '_site_name',
             'label' => 'Judul Situs',
             'value' => 'Laravel',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_site_description',
             'label' => 'Deskripsi Situs',
             'value' => 'Laravel',
             'type' => 'longtext',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_site_logo',
             'label' => 'Logo Situs',
             'value' => 'Laravel',
             'type' => 'image',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_site_favicon',
             'label' => 'Favicon Situs',
             'value' => 'Laravel',
             'type' => 'image',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_location',
             'label' => 'Alamat',
             'value' => 'Indonesia',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_email',
             'label' => 'Email',
             'value' => 'email@gmail.com',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_phone',
             'label' => 'Nomor Telepon',
             'value' => '081234567890',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_facebook',
             'label' => 'Facebook',
             'value' => 'https://facebook.com',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_instagram',
             'label' => 'Instagram',
             'value' => 'https://instagram.com',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_youtube',
             'label' => 'Youtube',
             'value' => 'https://twitter.com',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_twitter',
             'label' => 'Twitter',
             'value' => 'https://twitter.com',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_longtitude',
             'label' => 'Longtitude',
             'value' => '0',
             'type' => 'text',
         ]);
 
-        setting::create([
+        Setting::create([
             'key' => '_latitude',
             'label' => 'Latitude',
             'value' => '0',
